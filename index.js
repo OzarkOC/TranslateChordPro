@@ -8,11 +8,13 @@ const transposeDown = document.querySelector(`chordPro="transposeDown`);
 const transpose = $(".transpose .transpose-level").data("transpose");
 
 // START
-if (!display) return;
-if (!songData) return;
-updateDisplay(chordProData, display, transpose);
+
+updateDisplay(songData, display, transpose);
+
 // Functions
 function updateDisplay(chordProData, display, transpose = 1) {
+  if (!display) return;
+  if (!songData) return;
   const html = parseChordPro(chordProData, transpose);
   display.innerHTML = html;
 }
