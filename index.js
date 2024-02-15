@@ -1,5 +1,5 @@
 `use strict`;
-import { parseChordPro } from "$utils/chordProParse";
+import { parseChordPro } from "./utils/chordProParse";
 // Variables
 let songData;
 const display = document.querySelector(`[chordPro="display"]`);
